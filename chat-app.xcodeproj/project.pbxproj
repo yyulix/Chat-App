@@ -13,6 +13,8 @@
 		7CC4B84726AA06BA00DA67E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC4B84626AA06BA00DA67E8 /* Preview Assets.xcassets */; };
 		7CC4B85226AA06BA00DA67E8 /* chat_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4B85126AA06BA00DA67E8 /* chat_appTests.swift */; };
 		7CC4B85D26AA06BA00DA67E8 /* chat_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4B85C26AA06BA00DA67E8 /* chat_appUITests.swift */; };
+		7CC4B86F26AA0BD200DA67E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4B86E26AA0BD200DA67E8 /* LoginView.swift */; };
+		7CC4B87126AA0BEA00DA67E8 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4B87026AA0BEA00DA67E8 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		7CC4B85826AA06BA00DA67E8 /* chat-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chat-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC4B85C26AA06BA00DA67E8 /* chat_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_appUITests.swift; sourceTree = "<group>"; };
 		7CC4B85E26AA06BA00DA67E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC4B86E26AA0BD200DA67E8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7CC4B87026AA0BEA00DA67E8 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,9 @@
 		7CC4B83E26AA06B600DA67E8 /* chat-app */ = {
 			isa = PBXGroup;
 			children = (
+				7CC4B86C26AA0B4900DA67E8 /* ViewModel */,
+				7CC4B86B26AA0B4200DA67E8 /* Model */,
+				7CC4B86A26AA0B3A00DA67E8 /* View */,
 				7CC4B83F26AA06B600DA67E8 /* chat_appApp.swift */,
 				7CC4B84126AA06B600DA67E8 /* ContentView.swift */,
 				7CC4B84326AA06BA00DA67E8 /* Assets.xcassets */,
@@ -128,6 +135,37 @@
 				7CC4B85E26AA06BA00DA67E8 /* Info.plist */,
 			);
 			path = "chat-appUITests";
+			sourceTree = "<group>";
+		};
+		7CC4B86A26AA0B3A00DA67E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CC4B86D26AA0B9300DA67E8 /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CC4B86B26AA0B4200DA67E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CC4B86C26AA0B4900DA67E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CC4B86D26AA0B9300DA67E8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7CC4B86E26AA0BD200DA67E8 /* LoginView.swift */,
+				7CC4B87026AA0BEA00DA67E8 /* RegistrationView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC4B86F26AA0BD200DA67E8 /* LoginView.swift in Sources */,
 				7CC4B84226AA06B600DA67E8 /* ContentView.swift in Sources */,
 				7CC4B84026AA06B600DA67E8 /* chat_appApp.swift in Sources */,
+				7CC4B87126AA0BEA00DA67E8 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
