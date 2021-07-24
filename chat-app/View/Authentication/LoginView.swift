@@ -30,12 +30,13 @@ struct LoginView: View {
                 
                 
                 VStack(spacing: 20) {
-                    VStack {
-                        HStack {
-                        }
-                    }
                     TextField("Phone or email", text: $email)
+                    Divider()
+                        .foregroundColor(.gray)
+
                     SecureField("Password", text: $password)
+                    Divider()
+                        .foregroundColor(.gray)
                 }
                 .padding([.top, .horizontal])
                 
