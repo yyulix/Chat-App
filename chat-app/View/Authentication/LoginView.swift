@@ -80,9 +80,9 @@ struct LoginView: View {
                         HStack {
                             Spacer()
                             Text("Don't have an account?")
-                                .foregroundColor(.black)
+                                .foregroundColor(.primary)
                             Text("Set up")
-                                .foregroundColor(.black)
+                                .foregroundColor(.primary)
                             Spacer()
                         }.padding(40)
                     }

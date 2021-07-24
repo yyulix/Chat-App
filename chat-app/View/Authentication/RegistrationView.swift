@@ -72,10 +72,9 @@ struct RegistrationView: View {
                         Spacer()
 
                         Text("Already have an account?")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                         Text("Sign in")
-                            .foregroundColor(.black)
-
+                            .foregroundColor(.primary)
                         Spacer()
                     }.padding(40)
                 })
