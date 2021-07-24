@@ -11,10 +11,13 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @Environment(\.presentationMode) var mode
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
+                
+                Spacer()
                 
                 HStack { Spacer() }
                 
@@ -71,16 +74,15 @@ struct LoginView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: RegistrationView(),
+                    destination: RegistrationView()
+                        .navigationBarBackButtonHidden(true),
                     label: {
                         HStack {
                             Spacer()
-                            
                             Text("Don't have an account?")
                                 .foregroundColor(.black)
                             Text("Set up")
                                 .foregroundColor(.black)
-                            
                             Spacer()
                         }.padding(40)
                     }
