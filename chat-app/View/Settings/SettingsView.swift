@@ -14,8 +14,12 @@ struct SettingsView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 1) {
-                SettingsHeader().padding(.vertical)
-        
+                NavigationLink(
+                    destination: ProfileEditorView(),
+                    label: {
+                        SettingsHeader().padding(.vertical)
+                    }
+                )
                 
                 ForEach((0 ... 2), id: \.self) { _ in
                     SettingCell()
