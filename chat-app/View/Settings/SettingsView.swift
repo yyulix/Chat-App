@@ -49,12 +49,12 @@ struct SettingsView_Previews: PreviewProvider {
 struct SettingsHeader: View {
     var body: some View {
         HStack() {
-            Image(systemName: "person")
+            Image(systemName: "person.fill")
                 .resizable()
                 .scaledToFill()
                 .padding()
                 .frame(width: 50, height: 50, alignment: .center)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .background(Color.blue)
                 .clipShape(Circle())
             

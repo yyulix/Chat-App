@@ -12,10 +12,10 @@ struct ProfileEditorView: View {
         ZStack {
             Color(.systemGroupedBackground)
                 .ignoresSafeArea()
-        }
-        
-        VStack {
-            VStack {
+            VStack(alignment: .center,
+                   content: {
+                
+                    
                 HStack {
                     VStack {
                         Image(systemName: "person.fill")
@@ -35,29 +35,41 @@ struct ProfileEditorView: View {
                             }
                         )
                     }
+                    .padding()
                 }
-            }
-            
-            VStack {
-                HStack {
-                    Text("Status:")
-                        .foregroundColor(.gray)
-                    Spacer()
-                }
-                .padding()
-                HStack {
-                    Text("Available")
-                    Spacer()
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(.gray)
-                    
-                }.padding([.horizontal])
-            }
-            .padding()
-            // TODO: - modify prototype
+                
+                
+                NavigationLink(
+                    destination: ChangeStatusView(),
+                    label: {
+                        VStack {
+                                                        
+                            HStack {
+                                Text("Status:")
+                                    .foregroundColor(.gray)
+                                Spacer()
+                            }.padding([.horizontal, .top])
+                            HStack {
+                                Text("Available")
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                                    .foregroundColor(.gray)
+                                
+                            }.padding()
+                        }
+                        .padding(.horizontal)
+                        .foregroundColor(.black)
+                        .background(Color.white)
+                    }
+                )
+                Spacer()
+                // TODO: - modify prototype
+            })
         }
     }
 }
+
+
 
 struct ProfileEditorView_Previews: PreviewProvider {
     static var previews: some View {
