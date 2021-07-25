@@ -38,34 +38,37 @@ struct ProfileEditorView: View {
                     .padding()
                 }
                 
-                
+                VStack {
+                    HStack {
+                        Text("Status:")
+                            .foregroundColor(.gray)
+                        Spacer()
+                    }
+                    .padding([.horizontal, .top])
                 NavigationLink(
                     destination: ChangeStatusView(),
                     label: {
-                        VStack {
-                                                        
-                            HStack {
-                                Text("Status:")
-                                    .foregroundColor(.gray)
-                                Spacer()
-                            }.padding([.horizontal, .top])
-                            HStack {
-                                Text("Available")
-                                Spacer()
-                                Image(systemName: "chevron.right")
-                                    .foregroundColor(.gray)
-                                
-                            }.padding()
+                        HStack {
+                            Text("Available")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.gray)
+                            }
+                            .padding()
                         }
-                        .padding(.horizontal)
-                        .foregroundColor(.black)
-                        .background(Color.white)
-                    }
-                )
+                    )
+                    
+                }
+                .padding(.horizontal)
+                .foregroundColor(.black)
+                .background(Color.white)
+            
+                
                 Spacer()
                 // TODO: - modify prototype
             })
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
